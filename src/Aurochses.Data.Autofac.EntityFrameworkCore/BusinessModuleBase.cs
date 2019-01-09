@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Autofac;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aurochses.Data.Autofac.EntityFrameworkCore
 {
@@ -6,7 +7,7 @@ namespace Aurochses.Data.Autofac.EntityFrameworkCore
     /// Autofac module for business layer.
     /// </summary>
     /// <seealso cref="Module" />
-    public class BusinessModuleBase : global::Autofac.Module
+    public class BusinessModuleBase : Module
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BusinessModuleBase"/> class.
